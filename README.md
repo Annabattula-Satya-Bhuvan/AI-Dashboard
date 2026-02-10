@@ -1,18 +1,19 @@
 # 🤖 AI Dashboard UI
 
-A premium black & blue glassmorphic AI dashboard UI built with HTML, CSS, and JavaScript.
+A clean, professional AI dashboard UI built with HTML, CSS, and JavaScript.
 
 ## Features
-- Glassmorphism design
-- Neon blue gradients
-- Sidebar navigation
-- Stats cards
-- Activity feed
+- Black & blue glassmorphic design
+- Modular CSS architecture
+- Real usage analytics (bar chart)
+- Clean semantic HTML
+- Frontend-only (API-ready)
 
 ## Tech Stack
 - HTML
-- CSS
+- CSS (Design system based)
 - JavaScript
 
-## Note
-This is a frontend-only UI project with no backend.
+## Purpose
+This project demonstrates professional frontend structure and UI design
+suitable for dashboards and SaaS applications.
