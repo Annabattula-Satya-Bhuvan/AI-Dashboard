@@ -1,0 +1,15 @@
+:root {
+  --bg-main: #020617;
+  --bg-glass: rgba(15, 23, 42, 0.7);
+
+  --blue-primary: #3b82f6;
+  --blue-light: #60a5fa;
+  --text-main: #e5e7eb;
+  --text-muted: #93c5fd;
+
+  --border-glass: rgba(255, 255, 255, 0.12);
+  --shadow-blue: 0 0 35px rgba(59, 130, 246, 0.35);
+
+  --radius-lg: 18px;
+  --blur: blur(16px);
+}
