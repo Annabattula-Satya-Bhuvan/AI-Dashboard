@@ -4,71 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Dashboard</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
 
-  <div class="dashboard">
+  <main class="dashboard">
 
-    <header class="header">
+    <header>
       <h1>AI System Dashboard</h1>
-      <p class="subtitle">Real-time analytics overview</p>
+      <p>Live performance & usage metrics</p>
     </header>
 
-    <!-- Stats Cards -->
+    <!-- STATS -->
     <section class="stats">
-      <div class="card">
+      <div class="stat-card glass">
         <p>Daily Requests</p>
         <h2>18,420</h2>
       </div>
-      <div class="card">
+
+      <div class="stat-card glass">
         <p>Monthly Usage</p>
         <h2>542K</h2>
       </div>
-      <div class="card">
+
+      <div class="stat-card glass">
         <p>Model Accuracy</p>
         <h2>98.4%</h2>
       </div>
-      <div class="card">
+
+      <div class="stat-card glass">
         <p>System Load</p>
         <h2>62%</h2>
       </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="content">
+    <!-- MAIN -->
+    <section class="main-grid">
 
-      <!-- Analytics -->
-      <div class="panel">
+      <div class="panel glass">
         <h3>Usage Analytics</h3>
         <div class="chart"></div>
       </div>
 
-      <!-- Models -->
-      <div class="panel">
+      <div class="panel glass">
         <h3>Active Models</h3>
-        <ul class="models">
-          <li>GPT-Vision <span>Running</span></li>
-          <li>Text Analyzer <span>Optimized</span></li>
-          <li>Speech Engine <span>Idle</span></li>
-        </ul>
-      </div>
-
-      <!-- Activity -->
-      <div class="panel">
-        <h3>Recent Activity</h3>
-        <ul class="activity">
-          <li>AI processed 1,200 requests</li>
-          <li>Model accuracy improved by 0.3%</li>
-          <li>System health check completed</li>
-          <li>New dataset synced</li>
+        <ul class="list">
+          <li>Vision AI <span class="status-ok">Running</span></li>
+          <li>NLP Engine <span class="status-ok">Optimized</span></li>
+          <li>Speech Model <span class="status-ok">Idle</span></li>
         </ul>
       </div>
 
     </section>
 
-  </div>
+  </main>
 
-  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
