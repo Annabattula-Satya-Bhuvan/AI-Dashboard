@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">AI<span>Panel</span></h2>
+      <nav>
+        <a class="active">Dashboard</a>
+        <a>Analytics</a>
+        <a>Models</a>
+        <a>Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="header">
+        <h1>Dashboard</h1>
+        <div class="user">Admin</div>
+      </header>
+
+      <!-- Stats -->
+      <section class="stats">
+        <div class="card">
+          <p>Active Users</p>
+          <h2>12,480</h2>
+        </div>
+        <div class="card">
+          <p>AI Requests</p>
+          <h2>84,120</h2>
+        </div>
+        <div class="card">
+          <p>Accuracy</p>
+          <h2>98.6%</h2>
+        </div>
+      </section>
+
+      <!-- Content -->
+      <section class="content">
+        <div class="chart">
+          <h3>Usage Overview</h3>
+          <div class="fake-chart"></div>
+        </div>
+
+        <div class="activity">
+          <h3>Recent Activity</h3>
+          <ul>
+            <li>User generated AI report</li>
+            <li>Model training completed</li>
+            <li>New user registered</li>
+            <li>System optimization done</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
