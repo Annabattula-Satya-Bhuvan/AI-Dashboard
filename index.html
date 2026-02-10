@@ -3,65 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Dashboard</title>
+  <title>AI Analytics Dashboard</title>
 
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
 </head>
 <body>
 
-  <main class="dashboard">
+  <header class="header">
+    <h1>AI Analytics Dashboard</h1>
+    <span class="status">Live</span>
+  </header>
 
-    <header>
-      <h1>AI System Dashboard</h1>
-      <p>Live performance & usage metrics</p>
-    </header>
+  <main class="dashboard">
 
     <!-- STATS -->
     <section class="stats">
-      <div class="stat-card glass">
-        <p>Daily Requests</p>
-        <h2>18,420</h2>
+      <div class="card glass">
+        <h3>Total Requests</h3>
+        <p>128,450</p>
       </div>
-
-      <div class="stat-card glass">
-        <p>Monthly Usage</p>
-        <h2>542K</h2>
+      <div class="card glass">
+        <h3>Active Models</h3>
+        <p>6</p>
       </div>
-
-      <div class="stat-card glass">
-        <p>Model Accuracy</p>
-        <h2>98.4%</h2>
+      <div class="card glass">
+        <h3>Avg Response</h3>
+        <p>320 ms</p>
       </div>
-
-      <div class="stat-card glass">
-        <p>System Load</p>
-        <h2>62%</h2>
+      <div class="card glass">
+        <h3>Error Rate</h3>
+        <p>0.12%</p>
       </div>
     </section>
 
-    <!-- MAIN -->
-    <section class="main-grid">
+    <!-- USAGE ANALYTICS -->
+    <section class="panel glass">
+      <h2>Usage Analytics (Last 7 Days)</h2>
 
-      <div class="panel glass">
-        <h3>Usage Analytics</h3>
-        <div class="chart"></div>
+      <div class="chart">
+        <div class="bar" style="--value:60%"><span>Mon</span></div>
+        <div class="bar" style="--value:75%"><span>Tue</span></div>
+        <div class="bar" style="--value:90%"><span>Wed</span></div>
+        <div class="bar" style="--value:70%"><span>Thu</span></div>
+        <div class="bar" style="--value:85%"><span>Fri</span></div>
+        <div class="bar" style="--value:65%"><span>Sat</span></div>
+        <div class="bar" style="--value:80%"><span>Sun</span></div>
       </div>
+    </section>
 
-      <div class="panel glass">
-        <h3>Active Models</h3>
-        <ul class="list">
-          <li>Vision AI <span class="status-ok">Running</span></li>
-          <li>NLP Engine <span class="status-ok">Optimized</span></li>
-          <li>Speech Model <span class="status-ok">Idle</span></li>
-        </ul>
-      </div>
+    <!-- ACTIVITY -->
+    <section class="panel glass">
+      <h2>Recent Activity</h2>
 
+      <ul class="activity">
+        <li>GPT-4 processed 3,240 requests</li>
+        <li>New model deployed successfully</li>
+        <li>Latency reduced by 12%</li>
+        <li>System health check passed</li>
+      </ul>
     </section>
 
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
