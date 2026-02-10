@@ -1,0 +1,61 @@
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-blue);
+}
+
+/* STAT CARD */
+.stat-card {
+  padding: 22px;
+}
+
+.stat-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.stat-card h2 {
+  margin-top: 8px;
+  font-size: 1.6rem;
+}
+
+/* PANEL */
+.panel {
+  padding: 22px;
+}
+
+.panel h3 {
+  color: var(--blue-light);
+  margin-bottom: 14px;
+}
+
+/* CHART PLACEHOLDER */
+.chart {
+  height: 180px;
+  border-radius: 14px;
+  background: linear-gradient(
+    120deg,
+    #1e40af,
+    #3b82f6,
+    #60a5fa
+  );
+}
+
+/* LISTS */
+.list {
+  list-style: none;
+}
+
+.list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.status-ok {
+  color: #22c55e;
+}
