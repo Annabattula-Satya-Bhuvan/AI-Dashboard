@@ -10,58 +10,62 @@
 
   <div class="dashboard">
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2 class="logo">AI<span>Panel</span></h2>
-      <nav>
-        <a class="active">Dashboard</a>
-        <a>Analytics</a>
-        <a>Models</a>
-        <a>Settings</a>
-      </nav>
-    </aside>
+    <header class="header">
+      <h1>AI System Dashboard</h1>
+      <p class="subtitle">Real-time analytics overview</p>
+    </header>
 
-    <!-- Main -->
-    <main class="main">
-      <header class="header">
-        <h1>Dashboard</h1>
-        <div class="user">Admin</div>
-      </header>
+    <!-- Stats Cards -->
+    <section class="stats">
+      <div class="card">
+        <p>Daily Requests</p>
+        <h2>18,420</h2>
+      </div>
+      <div class="card">
+        <p>Monthly Usage</p>
+        <h2>542K</h2>
+      </div>
+      <div class="card">
+        <p>Model Accuracy</p>
+        <h2>98.4%</h2>
+      </div>
+      <div class="card">
+        <p>System Load</p>
+        <h2>62%</h2>
+      </div>
+    </section>
 
-      <!-- Stats -->
-      <section class="stats">
-        <div class="card">
-          <p>Active Users</p>
-          <h2>12,480</h2>
-        </div>
-        <div class="card">
-          <p>AI Requests</p>
-          <h2>84,120</h2>
-        </div>
-        <div class="card">
-          <p>Accuracy</p>
-          <h2>98.6%</h2>
-        </div>
-      </section>
+    <!-- Main Content -->
+    <section class="content">
 
-      <!-- Content -->
-      <section class="content">
-        <div class="chart">
-          <h3>Usage Overview</h3>
-          <div class="fake-chart"></div>
-        </div>
+      <!-- Analytics -->
+      <div class="panel">
+        <h3>Usage Analytics</h3>
+        <div class="chart"></div>
+      </div>
 
-        <div class="activity">
-          <h3>Recent Activity</h3>
-          <ul>
-            <li>User generated AI report</li>
-            <li>Model training completed</li>
-            <li>New user registered</li>
-            <li>System optimization done</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+      <!-- Models -->
+      <div class="panel">
+        <h3>Active Models</h3>
+        <ul class="models">
+          <li>GPT-Vision <span>Running</span></li>
+          <li>Text Analyzer <span>Optimized</span></li>
+          <li>Speech Engine <span>Idle</span></li>
+        </ul>
+      </div>
+
+      <!-- Activity -->
+      <div class="panel">
+        <h3>Recent Activity</h3>
+        <ul class="activity">
+          <li>AI processed 1,200 requests</li>
+          <li>Model accuracy improved by 0.3%</li>
+          <li>System health check completed</li>
+          <li>New dataset synced</li>
+        </ul>
+      </div>
+
+    </section>
 
   </div>
 
